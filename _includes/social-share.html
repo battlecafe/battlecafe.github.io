@@ -35,7 +35,7 @@
   
   <!--- Share on Twitter -->
   {% if site.share-links-active.twitter %}
-    <a href="https://twitter.com/intent/tweet?text={{ page.title | url_encode }}+{{ site.url }}{{ page.url }}&pic={{ page.share-img }}&via=battlecafe"
+    <a href="https://twitter.com/intent/tweet?text={{ page.title | url_encode }}+{{ site.url }}{{ page.url }}&pic={{ site.url}}{{ page.share-img }}&via=battlecafe"
       class="btn btn-social-icon btn-twitter" title="分享到Twitter">
       <span class="fa fa-fw fa-twitter" aria-hidden="true"></span>
     </a>
