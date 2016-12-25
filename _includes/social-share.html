@@ -27,7 +27,8 @@
 
   <!--- Share on VK -->
   {% if site.share-links-active.vk %}
-    <a href="https://vk.com/share.php?url={{ site.url }}{{ page.url }}&title={{ page.title }}: &description={{ page.subtitle }} | {{ site.description }}&image=http://storage1.imgchr.com/p88ne.jpg"
+    <a href="https://vk.com/share.php?url={{ site.url }}{{ page.url }}&title={{ page.title }}: &description={{ page.subtitle }} | {{ site.description }}&image={% if page.share-img %}{{ page.share-img }}{% else %}{{ site.url }}{{ site.avatar }}"
+    
       class="btn btn-social-icon btn-vk" title="分享到VK">
       <span class="fa fa-fw fa-vk" aria-hidden="true"></span>
     </a>
@@ -35,7 +36,7 @@
   
   <!--- Share on Twitter -->
   {% if site.share-links-active.twitter %}
-    <a href="https://twitter.com/intent/tweet?text={{ page.title | url_encode }}+{{ site.url }}{{ page.url }}&pic=http://storage1.imgchr.com/p88ne.jpg&via=battlecafe"
+    <a href="https://twitter.com/intent/tweet?text={{ page.title | url_encode }}+{{ site.url }}{{ page.url }}&via=battlecafe"
       class="btn btn-social-icon btn-twitter" title="分享到Twitter">
       <span class="fa fa-fw fa-twitter" aria-hidden="true"></span>
     </a>
