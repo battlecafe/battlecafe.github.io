@@ -27,7 +27,7 @@
 
   <!--- Share on VK -->
   {% if site.share-links-active.vk %}
-    <a href="https://vk.com/share.php?url={{ site.url }}{{ page.url }}&title={{ page.title }}: &description={{ page.subtitle }} | {{ site.description }}&image={% if page.share-img %}{{ page.share-img }}{% else %}{{ site.url }}{{ site.avatar }}"
+    <a href="https://vk.com/share.php?url={{ site.url }}{{ page.url }}&title={{ page.title }}: &description={{ page.subtitle }} | {{ site.description }}&image={% if page.share-img %}{{ page.share-img }}{% else %}{{ site.url }}{{ site.avatar }}{% endif %}"
     
       class="btn btn-social-icon btn-vk" title="分享到VK">
       <span class="fa fa-fw fa-vk" aria-hidden="true"></span>
