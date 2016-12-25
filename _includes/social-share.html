@@ -35,7 +35,7 @@
   
   <!--- Share on Twitter -->
   {% if site.share-links-active.twitter %}
-    <a href="https://twitter.com/intent/tweet?text={{ page.title | url_encode }}+{{ site.url }}{{ page.url }}&pic=http://storage1.imgchr.com/p88ne.jpg"
+    <a href="https://twitter.com/intent/tweet?text={{ page.title | url_encode }}+{{ site.url }}{{ page.url }}"
       class="btn btn-social-icon btn-twitter" title="分享到Twitter">
       <span class="fa fa-fw fa-twitter" aria-hidden="true"></span>
     </a>
@@ -43,7 +43,7 @@
 
   <!--- Share on Facebook -->
   {% if site.share-links-active.facebook %}
-    <a href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ page.url }}&t={{ page.title }}&pic=http://storage1.imgchr.com/p88ne.jpg"
+    <a href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ page.url }}&t={{ page.title }}"
       class="btn btn-social-icon btn-facebook" title="分享到Facebook">
       <span class="fa fa-fw fa-facebook" aria-hidden="true"></span>
     </a>
