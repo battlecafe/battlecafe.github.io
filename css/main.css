@@ -363,11 +363,6 @@ footer .theme-by {
   filter: drop-shadow(8px 8px 70px darkorchid);
 }
 .post-image:hover {
-  -moz-filter: drop-shadow(0px 0px 0px darkorchid);
-  -webkit-filter: drop-shadow(0px 0px 0px darkorchid);
-  -o-filter: drop-shadow(0px 0px 0px darkorchid);
-  -ms-filter: drop-shadow(0px 0px 0px darkorchid);
-  filter: drop-shadow(0px 0px 0px darkorchid);
 }
 .post-image img {
   border-radius: 100px;
