@@ -2,4 +2,6 @@
 layout: page
 ---
 
-![wechat_qrcode](/img/wechat_300px.png)
+<center>
+![wechat_qrcode](/img/wechat_1000px.png)
+</center>
