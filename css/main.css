@@ -341,6 +341,9 @@ footer .theme-by {
   font-style: normal;
   margin: 0 0 10px;
 }
+.post-preview .post-entry {
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
 .post-entry-container {
   display: inline-block;
   width: 100%;
@@ -362,9 +365,6 @@ footer .theme-by {
   border-radius: 100px;
   height: 192px;
   width: 192px;
-}
-.post-preview .post-entry {
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 .post-preview .post-read-more {
   font-weight: 800;
@@ -405,6 +405,20 @@ footer .theme-by {
 @media only screen and (min-width: 768px) {
   .post-preview .blog-tags {
     margin-top: 10px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .post-image, .post-image img {
+    height: 100px;
+    width: 100px;
+  }
+  
+  .post-image {
+    width: 100%;
+    text-align: center;
+    margin-top: 0;
+    float: left;
   }
 }
 
