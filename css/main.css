@@ -356,10 +356,18 @@ footer .theme-by {
   height: 192px;
   width: 192px;
   margin-top: -35px;
-  filter: grayscale(30%);
+  moz-filter: drop-shadow(8px 8px 10px darksalmon);
+  -webkit-filter: drop-shadow(8px 8px 10px darksalmon);
+  -o-filter: drop-shadow(8px 8px 10px darksalmon);
+  -ms-filter: drop-shadow(8px 8px 10px darksalmon);
+  filter: drop-shadow(8px 8px 10px darksalmon);
 }
 .post-image:hover {
-  filter: grayscale(0%);
+  moz-filter: drop-shadow(0px 0px 0px darksalmon);
+  -webkit-filter: drop-shadow(0px 0px 0px darksalmon);
+  -o-filter: drop-shadow(0px 0px 0px darksalmon);
+  -ms-filter: drop-shadow(0px 0px 0px darksalmon);
+  filter: drop-shadow(0px 0px 0px darksalmon);
 }
 .post-image img {
   border-radius: 100px;
