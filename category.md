@@ -1,10 +1,10 @@
 ---
 layout: page
-title: 博客归档
+title: 博客目录
 subtitle: 标签分类
 ---
 
-# 博客归档
+# 博客目录
 点击博文标题即可浏览
 
 {% for tag in site.tags %}
