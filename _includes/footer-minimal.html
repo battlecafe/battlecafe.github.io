@@ -1,6 +1,6 @@
 <footer class="footer-min">
   <div class="text-muted">
-	<i class="fa fa-creative-commons" aria-hidden="true"></i>&nbsp;{{ site.author.name }}
+	{{ site.author.name }}
 	&nbsp;&nbsp;&bull;&nbsp;&nbsp;
 	{% if page.date %}
 	  {{ page.date }}
@@ -12,12 +12,6 @@
     &nbsp;&nbsp;&bull;&nbsp;&nbsp;
     <a href="{{ site.url }}">{{ site.url-pretty }}</a>
     {% endif %}	
-
-	        <!-- Please don't remove this, keep my open source work credited :) -->
-		<p class="theme-by text-muted">
-		  本站基于
-		  <a href="http://deanattali.com/beautiful-jekyll/">beautiful-jekyll</a> 主题搭建
-		  <br><i class="fa fa-cog fa-spin" aria-hidden="true"></i> 全站启用 <a href="http://baike.baidu.com/item/https"><i class="fa fa-lock" aria-hidden="true"></i>HTTPS</a> 和 <a href="http://baike.baidu.com/item/DNSSec"><i class="fa fa-key" aria-hidden="true"></i>DNSsec</a> 安全扩展
-		</p>
   </div>
 </footer>
+
