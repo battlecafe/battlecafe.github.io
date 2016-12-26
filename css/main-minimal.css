@@ -1,5 +1,8 @@
 .main-content {
   padding-bottom: 50px;
+  background-image: url("/img/bg/snow.png");
+  background-attachment: fixed;
+}
 }
 
 footer.footer-min {
