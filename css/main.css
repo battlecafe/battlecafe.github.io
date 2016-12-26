@@ -341,9 +341,6 @@ footer .theme-by {
   font-style: normal;
   margin: 0 0 10px;
 }
-.post-preview .post-entry {
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-}
 .post-entry-container {
   display: inline-block;
   width: 100%;
@@ -365,6 +362,9 @@ footer .theme-by {
   border-radius: 100px;
   height: 192px;
   width: 192px;
+}
+.post-preview .post-entry {
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 .post-preview .post-read-more {
   font-weight: 800;
