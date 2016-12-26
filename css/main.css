@@ -356,11 +356,11 @@ footer .theme-by {
   height: 192px;
   width: 192px;
   margin-top: -35px;
-  -moz-filter: drop-shadow(8px 8px 70px darkorchid);
-  -webkit-filter: drop-shadow(8px 8px 70px darkorchid);
-  -o-filter: drop-shadow(8px 8px 70px darkorchid);
-  -ms-filter: drop-shadow(8px 8px 70px darkorchid);
-  filter: drop-shadow(8px 8px 70px darkorchid);
+  -moz-filter: drop-shadow(8px 8px 100px darkorchid);
+  -webkit-filter: drop-shadow(8px 8px 100px darkorchid);
+  -o-filter: drop-shadow(8px 8px 100px darkorchid);
+  -ms-filter: drop-shadow(8px 8px 100px darkorchid);
+  filter: drop-shadow(8px 8px 100px darkorchid);
 }
 .post-image:hover {
 }
