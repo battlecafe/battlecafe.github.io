@@ -356,10 +356,10 @@ footer .theme-by {
   height: 192px;
   width: 192px;
   margin-top: -35px;
-  filter: grayscale(90%);
+  filter: contrast(175%) brightness(3%)
 }
 .post-image:hover {
-  filter: grayscale(0%);
+  filter: contrast(0%) brightness(0%)
 }
 .post-image img {
   border-radius: 100px;
