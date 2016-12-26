@@ -2,4 +2,4 @@
 layout: minimal
 ---
 
-[wechat_qrcode](/img/wechat_300px.png)
+![wechat_qrcode](/img/wechat_300px.png)
