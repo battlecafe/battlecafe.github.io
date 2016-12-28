@@ -1,5 +1,7 @@
 ---
 layout: page
+sitemap:
+  exclude: true
 ---
 
 <center>
