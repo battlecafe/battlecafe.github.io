@@ -163,8 +163,8 @@ img {
   -moz-transition: opacity 0.5s ease-in-out;
   transition: opacity 0.5s ease-in-out;
   left: 50%;
-  width: 50px;
-  margin-top: -17px;
+  width: 48px;
+  margin-top: -15px;
 }
 .navbar-custom .avatar-container  .avatar-img-border {
   width: 100%;
