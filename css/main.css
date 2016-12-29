@@ -10,6 +10,7 @@ body {
   background: #FFF;
   background-image: url("/img/bg/snow.png");
   background-attachment: fixed;
+  padding-top: 100px;
 }
 p {
   line-height: 1.5;
