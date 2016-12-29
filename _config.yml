@@ -23,7 +23,6 @@ description: 樊宇的音乐博客～
 
 # List of links in the navigation bar
 navbar-links:
-  <i class="fa fa-home" aria-hidden="true"></i> 主页: ""
   <i class="fa fa-graduation-cap" aria-hidden="true"></i> 关于我: "aboutme"
   <i class="fa fa-archive" aria-hidden="true"></i> 博客归档:
     - <i class="fa fa-book" aria-hidden="true"></i> 博客目录: "category"
