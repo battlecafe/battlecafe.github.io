@@ -110,7 +110,7 @@ duoshuo: "battlecafe"
 google_analytics: "UA-89454625-1"
 
 # Google Tag Manager ID
-# gtm: ""
+gtm: "GTM-T7955Z5"
 
 # Facebook App ID
 # fb_app_id: ""
