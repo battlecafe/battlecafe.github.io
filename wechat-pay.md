@@ -5,12 +5,10 @@ sitemap:
 ---
 
 <div class="main-explain-area">
-<p>如果您喜欢我的小站，还可以通过使用 <a href="http://www.wechat.com/mobile/zh_TW/"><i class="fa fa-weixin" aria-hidden="true"></i> 微信</a> 转账来支持我：</p>
 <p align="center">
-    <a href="/wechat-pay">
       <img src="/img/wechat-pay.png" />
-    </a>
 </p>
+<p>如果您喜欢我的小站，还可以通过使用 <a href="http://www.wechat.com/mobile/zh_TW/"><i class="fa fa-weixin" aria-hidden="true"></i> 微信</a> 转账来支持我：</p>
 </div>
 
 <center>
