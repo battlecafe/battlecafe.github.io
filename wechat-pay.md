@@ -14,5 +14,3 @@ sitemap:
 <center>
 <img src="/img/wechat-pay_500px.png" alt="微信支付"/>
 </center>
-
-{% include audio.html file="https://cdn.lizhi.fm/audio/2017/01/11/2578928098222454278_ud.mp3" %}
