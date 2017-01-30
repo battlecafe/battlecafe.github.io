@@ -107,10 +107,10 @@ url-pretty: "fanyu.ru"  # eg. "deanattali.com/beautiful-jekyll"
 duoshuo: "battlecafe"
 
 # Fill in your Google Analytics ID to track your website using GA
-#google_analytics: "UA-89454625-1"
+# google_analytics: "UA-89454625-1"
 
 # Google Tag Manager ID
-#gtm: "GTM-T7955Z5"
+# gtm: "GTM-T7955Z5"
 
 # Facebook App ID
 # fb_app_id: ""
