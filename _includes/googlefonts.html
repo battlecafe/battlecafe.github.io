@@ -1,6 +1,6 @@
 {% if include.font.sri %}
   <link rel="stylesheet" href="//fonts.googleapis.com/css?family={{ include.font.href }}" integrity="{{ include.font.sri }}" crossorigin="anonymous">
-{% elsif include.css.href %}
+{% elsif include.font.href %}
   <link rel="stylesheet" href="//fonts.googleapis.com/css?family={{ include.font.href }}" />
 {% else %}
   <link rel="stylesheet" href="//fonts.googleapis.com/css?family={{ include.font }}" />
