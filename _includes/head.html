@@ -20,7 +20,7 @@
 
   {% if layout.common-ext-css %}
     {% for css in layout.common-ext-css %}
-      <link rel="stylesheet" href="{{ css }}" />
+      {% include ext-css.html css=css %}
     {% endfor %}
   {% endif %}
 
@@ -38,7 +38,7 @@
 
   {% if page.ext-css %}
     {% for css in page.ext-css %}
-      <link rel="stylesheet" href="{{ css }}" />
+      {% include ext-css.html css=css %}
     {% endfor %}
   {% endif %}
 
