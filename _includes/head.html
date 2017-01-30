@@ -32,7 +32,7 @@
 
   {% if layout.common-googlefonts %}
     {% for font in layout.common-googlefonts %}
-      <link rel="stylesheet" href="//fonts.googleapis.com/css?family={{ font }}" />
+      {% include common-googlefonts.html font=font %}
     {% endfor %}
   {% endif %}
 
