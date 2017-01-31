@@ -5,11 +5,12 @@ sitemap:
 ---
 
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   {% for post in site.posts %}
     {% unless post.published == false %}
     <url>
       <loc>{{ site.url }}{{ post.url }}</loc>
+      <xhtml:link rel="alternate" href="{{ site.url }}{{ post.url }}" hreflang="zh-Hans" />
       {% if post.sitemap.lastmod %}
         <lastmod>{{ post.sitemap.lastmod | date: "%Y-%m-%d" }}</lastmod>
       {% elsif post.date %}
@@ -34,6 +35,7 @@ sitemap:
     {% unless page.sitemap.exclude == true or page.url contains "/assets/css/style.css" %}
     <url>
       <loc>{{ site.url }}{{ page.url | remove: "index.html" }}</loc>
+      <xhtml:link rel="alternate" href="{{ site.url }}{{ page.url | remove: "index.html" }}" hreflang="zh-Hans" />
       {% if page.sitemap.lastmod %}
         <lastmod>{{ page.sitemap.lastmod | date: "%Y-%m-%d" }}</lastmod>
       {% elsif page.date %}
