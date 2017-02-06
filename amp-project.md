@@ -7,7 +7,7 @@ sitemap:
   exclude: true
 ---
 
-全站上对于符合谷歌AMP⚡移动页面优化的网站，提供海外CDN进行内嵌式加速秒开。
+全站上对于符合谷歌AMP⚡移动页面规范的网站，提供海外CDN进行内嵌式加速秒开。
 
 具体使用规范和实验性项目请访问：
 [AMP计划](https://www.ampproject.org/)
