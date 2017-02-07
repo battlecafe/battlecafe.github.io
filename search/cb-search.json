@@ -1,5 +1,7 @@
 ---
 layout: null
+sitemap:
+  exclude: true
 ---
 {
 	"code" : 0 ,
