@@ -69,6 +69,9 @@
                 for (var index in data.data) {
                     var item = data.data[index];
                     cb-titles.push(item.title);
+                    cb-tags.push(item.tag);
+                    cb-dates.push(item.date);
+                    cb-contents.push(item.content);
                     cb-urls.push(item.url);
                 }
 
