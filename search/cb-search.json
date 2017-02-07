@@ -14,5 +14,7 @@ sitemap:
       "url": "{{ site.baseurl }}{{ post.url }}",
       "date": "{{ post.date }}",
       "content": "{{ post.content | strip_html | strip_newlines | escape |replace:'\','@@' }}"
+    }
+    {% unless forloop.last %},{% endunless %}
+  {% endfor %}
 	         ]
-}
