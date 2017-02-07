@@ -65,8 +65,8 @@
             if (data.code == 0) {
                 for (var index in data.data) {
                     var item = data.data[index];
-                    cb-names.push(item.title);
-                    cb-urls.push(item.url);
+                    names.push(item.title);
+                    urls.push(item.url);
                 }
 
                 $("#cb-search-content").typeahead({
