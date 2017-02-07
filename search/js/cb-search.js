@@ -1,12 +1,8 @@
  $(document).ready(function () {
         var time1 = 0;
         var show = false;
-        var cb-titles = new Array(); //文章主标题
-        var cb-subtitles = new Array(); //文章副标题
-        var cb-tags = new Array(); //文章标签
-        var cb-date = new Array(); //文章发布日期
-        var cb-content = new Array(); //全文内容
-        var cb-urls = new Array(); //文章地址
+        var names = new Array(); //文章标题等
+        var urls = new Array(); //文章地址
         $(document).keyup(function (e) {
             var time2 = new Date().getTime();
             if (e.keyCode == 17) {
@@ -69,21 +65,17 @@
             if (data.code == 0) {
                 for (var index in data.data) {
                     var item = data.data[index];
-                    cb-titles.push(item.title);
-                    cb-subtitles.push(item.subtitle);
-                    cb-tags.push(item.tag);
-                    cb-date.push(item.date);
-                    cb-content.push(item.content);
-                    cb-urls.push(item.url);
+                    names.push(item.title);
+                    urls.push(item.url);
                 }
 
                 $("#cb-search-content").typeahead({
-                    source: cb-titles, cb-date,
+                    source: names,
 
                     afterSelect: function (item) {
 						$(".cb-search-tool").css("display", "none");
                         show = false;
-                        window.location.href = (cb-urls[cb-titles, cb-date.indexOf(item)]);
+                        window.location.href = (urls[names.indexOf(item)]);
                         return item;
                     }
                 });
