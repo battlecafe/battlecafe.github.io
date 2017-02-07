@@ -7,14 +7,17 @@ sitemap:
 	"code" : 0 ,
 	"data" : [
 	{% for post in site.posts %}
-      {
-        "title": "{{ post.title | escape }}",
+    {
+        "title": "{{ post.title | escape }} - {{ post.subtitle | escape }}",
         "category": "{{ post.category }}",
         "tags": "{{ post.tags | join: ' • ' }}",
         "url": "{{ site.baseurl }}{{ post.url }}",
         "date": "{{ post.date }}",
         "content": "{{ post.content | strip_html | strip_newlines | escape |replace:'\','@@' }}"
-    } {% unless forloop.last %},{% endunless %}
-  {% endfor %}
+    }
+    {% if forloop.rindex != 1  %}
+	,
+	{% endif %}
+    {% endfor %}
 	         ]
 }
