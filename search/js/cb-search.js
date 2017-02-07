@@ -1,8 +1,11 @@
  $(document).ready(function () {
         var time1 = 0;
         var show = false;
-        var names = new Array(); //文章名字等
-        var urls = new Array(); //文章地址
+        var cb-titles = new Array(); //文章标题及副标题
+        var cb-tags = new Array(); //文章标签
+        var cb-dates = new Array(); //文章日期
+        var cb-contents = new Array(); //文章内容
+        var cb-urls = new Array(); //文章地址
         $(document).keyup(function (e) {
             var time2 = new Date().getTime();
             if (e.keyCode == 17) {
@@ -65,8 +68,8 @@
             if (data.code == 0) {
                 for (var index in data.data) {
                     var item = data.data[index];
-                    names.push(item.title);
-                    urls.push(item.url);
+                    cb-titles.push(item.title);
+                    cb-urls.push(item.url);
                 }
 
                 $("#cb-search-content").typeahead({
