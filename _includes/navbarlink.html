@@ -7,11 +7,9 @@
   {% endif %}  
 {% endif %}
 
-{% if internal %}
-{% unless include.link[1] %}
+{% if internal and include.link[1] == "javascript:void(0)" %}
 {% capture linkurl %}javascript:void(0){% endcapture %}
-{% endunless %}
-{% elsif internal and include.link[1] %}
+{% elsif internal and include.link[1] !== "javascript:void(0" %}
   {% capture linkurl %}{{ site.baseurl }}/{{ include.link[1] }}{% endcapture %}
 {% else %}
   {% capture linkurl %}{{ include.link[1] }}{% endcapture %}
