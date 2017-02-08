@@ -153,7 +153,7 @@ img {
   transition: padding .5s ease-in-out;  
 }
 .navbar-custom .navbar-search-logo img {
-  height: 50px;
+  height: 40px;
   -webkit-transition: height .5s ease-in-out;
   -moz-transition: height .5s ease-in-out;
   transition: height .5s ease-in-out;
@@ -162,7 +162,7 @@ img {
   padding-top: 5px;
 }
 .navbar-custom.top-nav-short .navbar-search-logo img {
-  height: 40px;
+  height: 30px;
 }
 
 @media only screen and (min-width: 768px) {
