@@ -131,6 +131,7 @@ img {
   transition: padding .5s ease-in-out;  
 }
 .navbar-custom .navbar-brand-logo img {
+  float: left;
   height: 50px;
   -webkit-transition: height .5s ease-in-out;
   -moz-transition: height .5s ease-in-out;
