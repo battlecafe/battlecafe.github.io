@@ -16,12 +16,13 @@
     </div>
 </div>
       {% if site.title-img %}
-        <a class="navbar-brand navbar-brand-logo" href="{{ site.url }}"><img src="{{ site.title-img }}"/><i class="fa fa-search" aria-hidden="true" id="cb-search-btn" title="双击ctrl全文搜索"></i>
+        <a class="navbar-brand navbar-brand-logo" href="{{ site.url }}"><img src="{{ site.title-img }}"/>
         </a>
       {% else %}
         <a class="navbar-brand" href="{{ site.url }}">{{ site.title }}
         </a>
       {% endif %}
+      <i class="fa fa-search" aria-hidden="true" id="cb-search-btn" title="双击ctrl全文搜索"></i>
     </div>
 
     <div class="collapse navbar-collapse" id="main-navbar">
