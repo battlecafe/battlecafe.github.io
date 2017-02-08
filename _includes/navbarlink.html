@@ -7,12 +7,11 @@
   {% endif %}  
 {% endif %}
 
-{% if internal and include.link[1] == "javascript:void(0)" %}
-{% capture linkurl %}javascript:void(0){% endcapture %}
-{% elsif internal and include.link[1] !== "javascript:void(0" %}
+{% if internal %}
   {% capture linkurl %}{{ site.baseurl }}/{{ include.link[1] }}{% endcapture %}
 {% else %}
   {% capture linkurl %}{{ include.link[1] }}{% endcapture %}
 {% endif %}
 
+<a><i class="fa fa-search" aria-hidden="true" id="cb-search-btn" title="双击ctrl使用全文搜索"></i> 搜索</a>
 <a href="{{ linkurl }}">{{ include.link[0] }}</a>
