@@ -16,9 +16,8 @@
     </div>
 </div>
       {% if site.title-img %}
-        <a class="navbar-brand navbar-brand-logo" href="{{ site.url }}"><img src="{{ site.title-img }}"/>
+        <a class="navbar-brand navbar-brand-logo" href="{{ site.url }}"><img src="{{ site.title-img }}"/><i class="fa fa-search" aria-hidden="true" id="cb-search-btn" title="双击ctrl全文搜索"></i>
         </a>
-        <i class="fa fa-search" aria-hidden="true" id="cb-search-btn" title="双击ctrl全文搜索"></i>
       {% else %}
         <a class="navbar-brand" href="{{ site.url }}">{{ site.title }}
         </a>
