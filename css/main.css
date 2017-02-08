@@ -142,7 +142,9 @@ img {
 .navbar-custom.top-nav-short .navbar-brand-logo img {
   height: 40px;
 }
-/*full-text search*/
+
+/* --- Full-Text Search --- */
+
 .navbar-custom .navbar-search-logo {
   padding-top: 0;
   padding-left: 70px
