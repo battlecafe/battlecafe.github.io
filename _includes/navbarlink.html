@@ -8,6 +8,10 @@
 {% endif %}
 
 {% if internal %}
+{% unless include.link[1] %}
+{% capture linkurl %}{% endcapture %}
+{% endunless %}
+{% elsif internal and include.link[1] %}
   {% capture linkurl %}{{ site.baseurl }}/{{ include.link[1] }}{% endcapture %}
 {% else %}
   {% capture linkurl %}{{ include.link[1] }}{% endcapture %}
