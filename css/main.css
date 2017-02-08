@@ -147,7 +147,7 @@ img {
 
 .navbar-custom .navbar-search-logo {
   padding-top: 0;
-  padding-left: 50px
+  padding-left: 50px;
   -webkit-transition: padding .5s ease-in-out;
   -moz-transition: padding .5s ease-in-out;
   transition: padding .5s ease-in-out;  
