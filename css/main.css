@@ -143,28 +143,6 @@ img {
   height: 40px;
 }
 
-/* --- Full-Text Search --- */
-
-.navbar-custom .navbar-search-logo {
-  padding-top: 5px;
-  padding-left: 5px;
-  -webkit-transition: padding .5s ease-in-out;
-  -moz-transition: padding .5s ease-in-out;
-  transition: padding .5s ease-in-out;  
-}
-.navbar-custom .navbar-search-logo img {
-  height: 40px;
-  -webkit-transition: height .5s ease-in-out;
-  -moz-transition: height .5s ease-in-out;
-  transition: height .5s ease-in-out;
-}
-.navbar-custom.top-nav-short .navbar-search-logo {
-  padding-top: 5px;
-}
-.navbar-custom.top-nav-short .navbar-search-logo img {
-  height: 32px;
-}
-
 @media only screen and (min-width: 768px) {
   .navbar-custom {
     padding: 20px 0;
