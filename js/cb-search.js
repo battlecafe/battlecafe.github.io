@@ -62,7 +62,7 @@
         });
 
         $.getJSON("/cb-search.json",
-          function (data) {
+          function(data) {
             if (data.code == 0) {
                 for (var index in data.data) {
                     var item = data.data[index];
