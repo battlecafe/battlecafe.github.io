@@ -147,13 +147,13 @@ img {
 
 .navbar-custom .navbar-search-logo {
   padding-top: 0;
-  padding-left: 60px
+  padding-left: 50px
   -webkit-transition: padding .5s ease-in-out;
   -moz-transition: padding .5s ease-in-out;
   transition: padding .5s ease-in-out;  
 }
 .navbar-custom .navbar-search-logo img {
-  height: 40px;
+  height: 50px;
   -webkit-transition: height .5s ease-in-out;
   -moz-transition: height .5s ease-in-out;
   transition: height .5s ease-in-out;
@@ -162,7 +162,7 @@ img {
   padding-top: 5px;
 }
 .navbar-custom.top-nav-short .navbar-search-logo img {
-  height: 30px;
+  height: 40px;
 }
 
 @media only screen and (min-width: 768px) {
