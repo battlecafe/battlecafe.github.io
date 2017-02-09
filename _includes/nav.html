@@ -9,7 +9,17 @@
         <img src="{{ site.baseurl }}/img/cb-close.png"  id="cb-close-btn"/>
     </div>
 </div>
-    <button type="button" class="btn btn-success" id="cb-search-btn"><i class="fa fa-search" aria-hidden="true" title="试一下双击ctrl"></i> 全文搜索</button>
+    <!-- Single button -->
+<div class="btn-group">
+  <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Action <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu">
+    <li><a href="#" id="cb-search-btn"><i class="fa fa-search" aria-hidden="true" title="试一下双击ctrl"></i> 全文搜索</a></li>
+    <li role="separator" class="divider"></li>
+    <li><a href="#">Separated link</a></li>
+  </ul>
+</div>
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
         <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
