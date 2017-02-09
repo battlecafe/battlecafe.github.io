@@ -9,16 +9,20 @@
         <img src="{{ site.baseurl }}/img/cb-close.png"  id="cb-close-btn"/>
     </div>
 </div>
-    <!-- Single button -->
+    <!-- group buttons -->
+    <div class="btn-group" role="group" aria-label="group-buttons">
+  <button type="button" class="btn btn-success" id="cb-search-btn"><i class="fa fa-search" aria-hidden="true" title="试一下双击ctrl"></i> 全文搜索</button>
+  <button type="button" class="btn btn-success"><i class="fa fa-chevron-up" aria-hidden="true"></i></button>
 
-  <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-flask" aria-hidden="true"></i> 全新组件 <span class="caret"></span>
-  </button>
-  <ul class="dropdown-menu">
-    <li><a href="#" id="cb-search-btn"><i class="fa fa-search" aria-hidden="true" title="试一下双击ctrl"></i> 全文搜索</a></li>
-    <li role="separator" class="divider"></li>
-    <li><a href="#"><i class="fa fa-anchor" aria-hidden="true"></i></a></li>
-  </ul>
-
+  <div class="btn-group" role="group">
+    <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-anchor" aria-hidden="true"></i> 博客导航 <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu">
+      <li><a href="#">Dropdown link</a></li>
+      <li><a href="#">Dropdown link</a></li>
+    </ul>
+  </div>
+</div>
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
         <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
