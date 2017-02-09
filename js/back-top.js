@@ -8,7 +8,7 @@ $(document).ready(function () {
     }
   });
   $('#back-top a').click(function () {
-    $('html,body,nav').animate({
+    $('body,html').animate({
       scrollTop: 0
     }, 800);
     return false;
