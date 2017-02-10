@@ -8,11 +8,11 @@ common-ext-css:
   - href: "https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css"
     sri: "sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0= sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
 common-js:
+  - "/js/jquery-3.1.1.min.js"
   - "/js/bootstrap.min.js"
   - "/js/main.js"
   - "/js/bootstrap3-typeahead.min.js"
   - "/js/cb-search.js"
-  - "/js/to-top.js"
 ---
 
 <!DOCTYPE html>
@@ -31,6 +31,10 @@ common-js:
     {% include footer.html %}
   
     {% include footer-scripts.html %}
+    
+    <a href="#top" class="btn btn-warning" role="button" id="back-top"><i class="fa fa-caret-square-o-up" aria-hidden="true"></i> 回到顶部</a> 
+    
+    <script type="text/javascript" src="/js/to-top.js"></script>
     
   </body>
 </html>
