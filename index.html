@@ -44,12 +44,14 @@ bigimg:
       </div>
     </div>
 
-    {% if post.tags.size > 0 %}
+    {% if page.tags.size > 0 %}
     <div class="blog-tags">
-      标签：
-      {{ post.tags | join: ", " }}
+		    <br>标签：
+		      {% for tag in page.tags %}
+		    <a href="{{ site.baseurl }}/tags/{{ tag | slugize }}"> • {{ tag | capitalize}}</a>
+		      {% endfor %}
     </div>
-    {% endif %}
+		    {% endif %}
 
    </article>
   {% endfor %}
