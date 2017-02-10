@@ -47,7 +47,7 @@ bigimg:
     {% if post.tags.size > 0 %}
     <div class="blog-tags">
       标签：
-      {{ post.tags | join: ", " }}
+      {{ post.tags | join: " • " }}
     </div>
     {% endif %}
 
