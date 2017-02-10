@@ -24,8 +24,8 @@ description: 樊宇的音乐博客～
 # List of links in the navigation bar
 navbar-links:
   <i class="fa fa-graduation-cap" aria-hidden="true"></i> 关于我: "aboutme"
-  <i class="fa fa-archive" aria-hidden="true"></i> 博客归档:
-    - <i class="fa fa-book" aria-hidden="true"></i> 博客目录: "category"
+  <i class="fa fa-archive" aria-hidden="true"></i> 标签归档:
+    - <i class="fa fa-book" aria-hidden="true"></i> 标签目录: "category"
     - <i class="fa fa-cloud" aria-hidden="true"></i> 标签云: "tags"
   <i class="fa fa-link" aria-hidden="true"></i> 友情链接:
     - <i class="fa fa-info-circle" aria-hidden="true"></i> 下格音音乐会海报: "http://new.nnovcons.ru/afisha/"
