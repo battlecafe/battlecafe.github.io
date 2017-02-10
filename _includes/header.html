@@ -36,15 +36,14 @@
 		  {% endif %}
 		  
 		  {% if include.type == "post" %}
-		  <span class="post-meta">发布于 {{ page.date | date: "%Y年%-m月%-d日" }}
-		  {% if page.tags == empty %}
-		  {% else %}
-		  <br>标签：
-		  {% for tag in page.tags %}
-		  <a href="{{ site.baseurl }}/tags/{{ tag | slugize }}"> • {{ tag | capitalize}}</a>
-		  {% endfor %}
-		  {% endif %}
-		  </span>
+		   <span class="post-meta">发布于 {{ page.date | date: "%Y年%-m月%-d日" }}
+		    {% if page.tags.size > 0 %}
+		    <br>标签：
+		      {% for tag in page.tags %}
+		    <a href="{{ site.baseurl }}/tags/{{ tag | slugize }}"> • {{ tag | capitalize}}</a>
+		      {% endfor %}
+		    {% endif %}
+		   </span>
 		  {% endif %}
         </div>
       </div>
@@ -69,15 +68,14 @@
 		  {% endif %}
 		  
 		  {% if include.type == "post" %}
-		  <span class="post-meta">发布于 {{ page.date | date: "%Y年%-m月%-d日" }}
-		  {% if page.tags == empty %}
-		  {% else %}
-		  <br>关键词：
-		  {% for tag in page.tags %}
-		  <a href="{{ site.baseurl }}/tags/{{ tag | slugize }}"> • {{ tag | capitalize}}</a>
-		  {% endfor %}
-		  {% endif %}
-		  </span>
+		   <span class="post-meta">发布于 {{ page.date | date: "%Y年%-m月%-d日" }}
+		    {% if page.tags.size > 0 %}
+		    <br>标签：
+		      {% for tag in page.tags %}
+		    <a href="{{ site.baseurl }}/tags/{{ tag | slugize }}"> • {{ tag | capitalize}}</a>
+		      {% endfor %}
+		    {% endif %}
+		   </span>
 		  {% endif %}
         </div>
       </div>

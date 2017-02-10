@@ -7,7 +7,7 @@
   <link rel="icon" href="/img/favicon.ico" type="image/x-icon">
   <link rel="apple-touch-icon" href="/img/favicon.ico">
 
-  <title>{% if page.use-site-title %}{{ site.title }} {{ site.title-separator }} {{ site.description }}{% elsif page.title and page.subtitle %}{{ page.title }} {{ site.title-separator }} {{ page.subtitle }}{% elsif page.title %}{% unless page.subtitle %}{{ page.title }} | {{ site.description }}{% endunless %}{% elsif page.layout == "tagpage" %}关键词：{{ page.tag }} {{ site.title-separator }} {{ site.description }}{% else %}{{ site.title }} {{ site.title-separator }} {{ site.description }}{% endif %}</title>
+  <title>{% if page.use-site-title %}{{ site.title }} {{ site.title-separator }} {{ site.description }}{% elsif page.title and page.subtitle %}{{ page.title }} {{ site.title-separator }} {{ page.subtitle }}{% elsif page.title %}{% unless page.subtitle %}{{ page.title }} | {{ site.description }}{% endunless %}{% elsif page.layout == "tagpage" %}标签：{{ page.tag }} {{ site.title-separator }} {{ site.description }}{% else %}{{ site.title }} {{ site.title-separator }} {{ site.description }}{% endif %}</title>
 
   <meta name="author" content="{{ site.author.name }}" />
 
