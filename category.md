@@ -1,11 +1,8 @@
 ---
 layout: page
-title: 博客目录
-subtitle: 标签分类
+title: 标签目录
+subtitle: 按标签分类
 ---
-
-# 博客目录
-点击博文标题即可浏览
 
 {% for tag in site.tags %}
   <h2 class='tag-header' id="{{ tag[0] }}-ref">{{ tag[0] }}</h2>
