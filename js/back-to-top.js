@@ -1,21 +1,15 @@
-﻿if ($('#back-to-top').length) {
-    var scrollTrigger = 100, // px
-        backToTop = function () {
-            var scrollTop = $(window).scrollTop();
-            if (scrollTop > scrollTrigger) {
-                $('#back-to-top').addClass('show');
-            } else {
-                $('#back-to-top').removeClass('show');
-            }
-        };
-    backToTop();
-    $(window).on('scroll', function () {
-        backToTop();
+$("#back-to-top").hide();
+$(function () {
+    $(window).scroll(function(){
+        if ($(window).scrollTop()>0){
+            $("#back-to-top").fadeIn(1000);
+        }
+        else{
+            $("#back-to-top").fadeOut(1000);
+        }
     });
-    $('#back-to-top').on('click', function (e) {
-        e.preventDefault();
-        $('html,body').animate({
-            scrollTop: 0
-        }, 700);
+    $("#back-to-top").click(function(){
+        $('body,html').animate({scrollTop:0},800);
+            return false;
     });
-}
+});
