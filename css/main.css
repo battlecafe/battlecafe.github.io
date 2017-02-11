@@ -243,6 +243,12 @@ img {
   .navbar-custom .nav .navlinks-container:hover {
     background: #eee;
   }
+  .navbar-custom .nav .navlinks-container:focus {
+    background: #eee;
+  }
+  .navbar-custom .nav .navlinks-container:focus .navlinks-children {
+    display: block;
+  }
   .navbar-custom .nav .navlinks-container:hover .navlinks-children {
     display: block;
   }
