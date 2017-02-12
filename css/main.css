@@ -243,14 +243,14 @@ img {
   .navbar-custom .nav .navlinks-container:hover {
     background: #eee;
   }
-  .navbar-custom .nav .navlinks-container:focus {
-    background: #eee;
-  }
-  .navbar-custom .nav .navlinks-container:focus .navlinks-children {
-    display: block;
-  }
   .navbar-custom .nav .navlinks-container:hover .navlinks-children {
     display: block;
+  }
+    .navbar-custom .nav .navlinks-container:focus {
+    background: transparent;
+  }
+  .navbar-custom .nav .navlinks-container:focus .navlinks-children {
+    display: none;
   }
   .navbar-custom .nav .navlinks-children {
     position: absolute;
