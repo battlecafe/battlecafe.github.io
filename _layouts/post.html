@@ -18,18 +18,15 @@ layout: base
 
       <ul class="pager blog-pager">
         {% if page.previous.url %}
-        <section class="wow-slideInRight" data-wow-duration="1.5s">
-        <li class="previous">
+        <li class="previous wow slideInRight" data-wow-duration="1.5s">
           <a href="{{ page.previous.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{ page.previous.title }}">&larr; 上一篇</a>
         </li>
         </section>
         {% endif %}
         {% if page.next.url %}
-        <section class="wow-slideInLeft" data-wow-duration="1.5s">
-        <li class="next">
+        <li class="next wow-slideInLeft" data-wow-duration="1.5s">
           <a href="{{ page.next.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{ page.next.title }}">下一篇 &rarr;</a>
         </li>
-        </section>
         {% endif %}
       </ul>
 
