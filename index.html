@@ -10,9 +10,9 @@ bigimg:
   - "/img/big-imgs/nngk.jpg" : "俄罗斯下诺夫哥罗德格林卡国立音乐学院 (2016年10月1日)"
 ---
 
-<div class="posts-list">
+<div class="posts-list wow fadeInLeft" data-wow-duration="1.5s">
   {% for post in paginator.posts %}
-  <article class="post-preview wow fadeInLeft" data-wow-duration="1.5s">
+  <article class="post-preview">
     <a href="{{ post.url | prepend: site.baseurl }}">
 	  <h2 class="post-title">{{ post.title }}</h2>
 
