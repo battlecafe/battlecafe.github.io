@@ -12,7 +12,7 @@ bigimg:
 
 <div class="posts-list">
   {% for post in paginator.posts %}
-  <article class="post-preview wow fadeInLeft" data-wow-duration="2s" data-wow-delay="5s">
+  <article class="post-preview wow fadeInLeft">
     <a href="{{ post.url | prepend: site.baseurl }}">
 	  <h2 class="post-title">{{ post.title }}</h2>
 
