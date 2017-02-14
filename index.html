@@ -12,7 +12,6 @@ bigimg:
 
 <div class="posts-list">
   {% for post in paginator.posts %}
-  <section class="wow fadeInLeft" data-wow-duration="1.5s">
   <article class="post-preview">
     <a href="{{ post.url | prepend: site.baseurl }}">
 	  <h2 class="post-title">{{ post.title }}</h2>
@@ -53,7 +52,6 @@ bigimg:
     {% endif %}
 
    </article>
-   </section>
   {% endfor %}
 </div>
 
