@@ -203,6 +203,7 @@
           {% endif %}
         </ul>
         <p class="copyright text-muted">
+          <section class="wow fadeInDown" data-wow-duration="1.5s">
 		  <i class="fa fa-creative-commons" aria-hidden="true"></i>&nbsp;{{ site.author.name }}
 		  &nbsp;&bull;&nbsp;
 		  2016–{{ site.time | date: '%Y' }}
@@ -210,13 +211,16 @@
 		  {% if site.url-pretty %}
 		  &nbsp;&bull;&nbsp;
 		  <a href="{{ site.url }}">{{ site.url-pretty }}</a>
+		  </section>
 		  {% endif %}
 	    </p>
 	        <!-- Please don't remove this, keep my open source work credited :) -->
 		<p class="theme-by text-muted">
+		  <section class="wow fadeInUp" data-wow-duration="1.5s">
 		  本站基于
 		  <a href="http://deanattali.com/beautiful-jekyll/">beautiful-jekyll</a> 主题搭建
 		  <br><i class="fa fa-cog fa-spin" aria-hidden="true"></i> 全站启用 <a href="http://baike.baidu.com/item/https"><i class="fa fa-lock" aria-hidden="true"></i>HTTPS</a> 和 <a href="http://baike.baidu.com/item/DNSSec"><i class="fa fa-key" aria-hidden="true"></i>DNSsec</a> 安全扩展
+		  </section>
 		</p>
       </div>
     </div>
