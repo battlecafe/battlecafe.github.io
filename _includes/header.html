@@ -25,7 +25,7 @@
     <div class="row">
       <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
         <div class="{{ include.type }}-heading">
-         <section class="wow slideInDown" data-wow-duration="1.5s">
+         <section class="wow slideInUp" data-wow-duration="1.5s">
           <h1>{% if page.title %}{{ page.title }}{% else %}<br/>{% endif %}</h1>
           </section>
 		  {% if page.subtitle %}
@@ -33,13 +33,18 @@
 		    <section class=wow zoomIn" data-wow-duration="1.5s">
             <hr class="small">
             </section>
+            <section class="wow slideInDown" data-wow-duration="1.5s">
             <span class="{{ include.type }}-subheading">{{ page.subtitle }}</span>
+            </section>
 			{% else %}
+			<section class="wow slideInDown" data-wow-duration="1.5s">
 			<h2 class="{{ include.type }}-subheading">{{ page.subtitle }}</h2>
+			</section>
 			{% endif %}
 		  {% endif %}
 		  
 		  {% if include.type == "post" %}
+		  <section class="wow flipInY" data-wow-duration="1.5s">
 		   <span class="post-meta">发布于 {{ page.date | date: "%Y年%-m月%-d日" }}
 		    {% if page.tags.size > 0 %}
 		    <br>标签：
@@ -48,6 +53,7 @@
 		      {% endfor %}
 		    {% endif %}
 		   </span>
+		   </section>
 		  {% endif %}
         </div>
       </div>
@@ -61,20 +67,27 @@
     <div class="row">
       <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
         <div class="{{ include.type }}-heading">
+         <section class="wow slideInUp" data-wow-duration="1.5s">
           <h1>{% if page.title %}{{ page.title }}{% else %}<br/>{% endif %}</h1>
+          </section>
 		  {% if page.subtitle %}
 		    {% if include.type == "page" %}
 		    <section class="wow zoomIn" data-wow-duration="1.5s">
             <hr class="small">
             </section>
+            <section class="wow slideInDown" data-wow-duration="1.5s">
             <span class="{{ include.type }}-subheading">{{ page.subtitle }}</span>
+            </section>
 			{% else %}
+			<section class="wow slideInDown" data-wow-duration="1.5s">
 			<h2 class="{{ include.type }}-subheading">{{ page.subtitle }}</h2>
+			</section>
 			{% endif %}
 		  {% endif %}
 		  
 		  {% if include.type == "post" %}
-		   <span class="post-meta wow slideInLeft" data-wow-duration="1.5s">发布于 {{ page.date | date: "%Y年%-m月%-d日" }}
+		   <section class="wow flipInY" data-wow-duration="1.5s">
+		   <span class="post-meta">发布于 {{ page.date | date: "%Y年%-m月%-d日" }}
 		    {% if page.tags.size > 0 %}
 		    <br>标签：
 		      {% for tag in page.tags %}
@@ -82,6 +95,7 @@
 		      {% endfor %}
 		    {% endif %}
 		   </span>
+		   </section>
 		  {% endif %}
         </div>
       </div>
