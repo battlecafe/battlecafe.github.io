@@ -12,7 +12,6 @@ bigimg:
 
 <div class="posts-list">
   {% for post in paginator.posts %}
-  <section class="wow pulse" data-wow-duration="1.5s">
   <article class="post-preview">
     <a href="{{ post.url | prepend: site.baseurl }}">
 	  <h2 class="post-title">{{ post.title }}</h2>
@@ -42,7 +41,9 @@ bigimg:
         {{ post.excerpt | strip_html | xml_escape | truncatewords: site.excerpt_length }}
         {% assign excerpt_word_count = post.excerpt | number_of_words %}
         {% if post.content != post.excerpt or excerpt_word_count > site.excerpt_length %}
+          <section class="wow pulse" data-wow-duration="1.5s">
           <br><a href="{{ post.url | prepend: site.baseurl }}" class="post-read-more">【详细阅读】</a>
+          </section>
         {% endif %}
       </div>
     </div>
@@ -55,7 +56,6 @@ bigimg:
     {% endif %}
 
    </article>
-   </section>
   {% endfor %}
 </div>
 
