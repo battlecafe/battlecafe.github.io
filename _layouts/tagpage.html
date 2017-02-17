@@ -2,16 +2,12 @@
 layout: default
 ---
 
-<section class="wow fadeInDown" data-wow-duration="1.5s">
 <h1>{{ page.tag }}</h1>
-</section>
 
 <ul>
 {% for post in site.tags[page.tag] %}
-  <section class="wow fadeIn" data-wow-duration="1.5s">
   <li>
     {{ post.date | date: "%Y年%-m月%-d日" }}: <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
   </li>
-  </section>
 {% endfor %}
 </ul>

@@ -23,10 +23,10 @@
         <span class="icon-bar"></span>
       </button>
       {% if site.title-img %}
-        <a class="navbar-brand navbar-brand-logo" href="{{ site.url }}"><section class="wow fadeInUp" data-wow-duration="1.5s"><img src="{{ site.title-img }}"/></section>
+        <a class="navbar-brand navbar-brand-logo" href="{{ site.url }}"><img src="{{ site.title-img }}"/>
         </a>
       {% else %}
-        <a class="navbar-brand" href="{{ site.url }}"><section class="wow fadeInUp" data-wow-duration="1.5s">{{ site.title }}</section>
+        <a class="navbar-brand" href="{{ site.url }}">{{ site.title }}
         </a>
       {% endif %}
     </div>
@@ -58,9 +58,7 @@
 	<div class="avatar-container">
 	  <div class="avatar-img-border">
 	    <a href="{{ site.url }} ">
-	      <section class="wow rotateIn" data-wow-duration="1.5s">
 	      <img class="avatar-img" src="{{ page.image | prepend: site.baseurl | replace: '//', '/' }}" />
-	      </section>
 		</a>
 	  </div>
 	</div>
@@ -68,9 +66,7 @@
 	<div class="avatar-container">
 	  <div class="avatar-img-border">
 	    <a href="{{ site.url }} ">
-	      <section class="wow rotateIn" data-wow-duration="1.5s">
 	      <img class="avatar-img" src="{{ site.avatar | prepend: site.baseurl | replace: '//', '/' }}" />
-	      </section>
 		</a>
 	  </div>
 	</div>
