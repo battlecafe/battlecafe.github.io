@@ -8,7 +8,7 @@ layout: base
   <div class="row">
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
 
-      <article role="main" class="blog-post wow fadeIn" data-wow-duration="5s">
+      <article role="main" class="blog-post">
         {{ content }}
       </article>
 
@@ -16,7 +16,7 @@ layout: base
         {% include social-share.html %}
       {% endif %}
 
-      <ul class="pager blog-pager wow fadeIn" data-wow-duration="1.5s">
+      <ul class="pager blog-pager">
         {% if page.previous.url %}
         <li class="previous">
           <a href="{{ page.previous.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{ page.previous.title }}">&larr; 上一篇</a>
@@ -31,7 +31,7 @@ layout: base
       </ul>
 
       {% if page.comments %}
-        <div class="duoshuo-comments wow fadeIn" data-wow-duration="5s">
+        <div class="duoshuo-comments wow fadeIn" data-wow-duration="1.5s">
           {% include duoshuo.html %}
         </div>
       {% endif %}
