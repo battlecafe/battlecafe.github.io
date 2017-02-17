@@ -61,7 +61,7 @@ bigimg:
 </div>
 
 {% if paginator.total_pages > 1 %}
-<ul class="pager main-pager">
+<ul class="pager main-pager wow fadeIn" data-wow-duration="1.5s">
   {% if paginator.previous_page %}
   <li class="previous">
     <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; 上一页</a>
