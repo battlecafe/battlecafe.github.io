@@ -10,45 +10,46 @@ bigimg:
   - "/img/big-imgs/nngk.jpg" : "俄罗斯下诺夫哥罗德格林卡国立音乐学院 (2016年10月1日)"
 ---
 
-<div class="posts-list">
+<a href=“javascript:alert(‘清除成功’);”>清除缓存</a>
+<div class=”posts-list“>
   {% for post in paginator.posts %}
-  <article class="post-preview">
-    <a href="{{ post.url | prepend: site.baseurl }}">
-	  <h2 class="post-title">{{ post.title }}</h2>
+  <article class=”post-preview“>
+    <a href=”{{ post.url | prepend: site.baseurl }}“>
+	  <h2 class=”post-title“>{{ post.title }}</h2>
 
 	  {% if post.subtitle %}
-	  <h3 class="post-subtitle">
+	  <h3 class=”post-subtitle“>
 	    {{ post.subtitle }}
 	  </h3>
 	  {% endif %}
     </a>
 
-    <p class="post-meta">
-      发布于 {{ post.date | date: "%Y年%-m月%-d日" }}
+    <p class=”post-meta“>
+      发布于 {{ post.date | date: ”%Y年%-m月%-d日“ }}
     </p>
 
-    <div class="post-entry-container">
+    <div class=”post-entry-container“>
       {% if post.image %}
-      <div class="post-image">
-        <a href="{{ post.url | prepend: site.baseurl }}">
-          <img src="{{ site.baseurl }}{{ post.image }}">
+      <div class=”post-image“>
+        <a href=”{{ post.url | prepend: site.baseurl }}“>
+          <img src=”{{ site.baseurl }}{{ post.image }}“>
         </a>
       </div>
       {% endif %}
-      <div class="post-entry">
+      <div class=”post-entry“>
         {{ post.excerpt | strip_html | xml_escape | truncatewords: site.excerpt_length }}
         {% assign excerpt_word_count = post.excerpt | number_of_words %}
         {% if post.content != post.excerpt or excerpt_word_count > site.excerpt_length %}
           <br>
-          <a href="{{ post.url | prepend: site.baseurl }}" class="post-read-more">【详细阅读】</a>
+          <a href=”{{ post.url | prepend: site.baseurl }}“ class=”post-read-more“>【详细阅读】</a>
         {% endif %}
       </div>
     </div>
 
     {% if post.tags.size > 0 %}
-    <div class="blog-tags">
+    <div class=”blog-tags“>
       标签：
-      {{ post.tags | join: " • " }}
+      {{ post.tags | join: ” • “ }}
     </div>
     {% endif %}
 
@@ -58,15 +59,15 @@ bigimg:
 </div>
 
 {% if paginator.total_pages > 1 %}
-<ul class="pager main-pager">
+<ul class=”pager main-pager“>
   {% if paginator.previous_page %}
-  <li class="previous">
-    <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; 上一页</a>
+  <li class=”previous“>
+    <a href=”{{ paginator.previous_page_path | prepend: site.baseurl | replace: ’//‘, ’/‘ }}“>&larr; 上一页</a>
   </li>
   {% endif %}
   {% if paginator.next_page %}
-  <li class="next">
-    <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">下一页 &rarr;</a>
+  <li class=”next“>
+    <a href=”{{ paginator.next_page_path | prepend: site.baseurl | replace: ’//‘, ’/‘ }}“>下一页 &rarr;</a>
   </li>
   {% endif %}
 </ul>
