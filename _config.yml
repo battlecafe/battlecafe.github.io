@@ -1,17 +1,17 @@
-# --- General options --- #
+# — General options — #
 
 # url is the full website URL
-# baseurl is the website's URL without the hostname
+# baseurl is the website’s URL without the hostname
 
 # If you are building a simple GitHub user page (http://username.github.io) then use these settings:
-url: "https://fanyu.ru"
-baseurl: ""
+url: https://fanyu.ru
+baseurl: 
 
 # If you are building a GitHub project page then use these settings:
-#url: "http://username.github.io/projectname"
-#baseurl: "/projectname"
+#url: “http://username.github.io/projectname”
+#baseurl: “/projectname”
 
-# Of course don't forget to change the username and projectname to YOUR username and project
+# Of course don’t forget to change the username and projectname to YOUR username and project
 
 # Name of website
 title: 樊宇
@@ -19,38 +19,38 @@ title: 樊宇
 # Short description of your site
 description: 樊宇的音乐博客～
 
-# --- Navigation bar options --- #
+# — Navigation bar options — #
 
 # List of links in the navigation bar
 navbar-links:
-  <i class="fa fa-graduation-cap" aria-hidden="true"></i> 关于我: "aboutme"
-  <i class="fa fa-archive" aria-hidden="true"></i> 标签归档:
-    - <i class="fa fa-book" aria-hidden="true"></i> 标签目录: "category"
-    - <i class="fa fa-cloud" aria-hidden="true"></i> 标签云: "tags"
-  <i class="fa fa-link" aria-hidden="true"></i> 友情链接:
-    - <i class="fa fa-info-circle" aria-hidden="true"></i> 下格音音乐会海报: "http://new.nnovcons.ru/afisha/"
-    - <i class="fa fa-vk" aria-hidden="true"></i> VK博士群通知: "vk-group"
-    - <i class="fa fa-music" aria-hidden="true"></i> 青年作曲家（方可）: "https://fangkebxt.wordpress.com/"
-    - <i class="fa fa-pencil-square-o" aria-hidden="true"></i> 大汉俄БКРС官网: "https://bkrs.info/"
-  <i class="fa fa-language" aria-hidden="true"></i> 汉语:
-    - <i class="fa fa-language" aria-hidden="true"></i> English: "https://fanyu.ru/en/"
-    - <i class="fa fa-language" aria-hidden="true"></i> Русский: "https://fanyu.ru/ru/"
+  <i class=“fa fa-graduation-cap” aria-hidden=“true”></i> 关于我: “aboutme”
+  <i class=“fa fa-archive” aria-hidden=“true”></i> 标签归档:
+    - <i class=“fa fa-book” aria-hidden=“true”></i> 标签目录: “category”
+    - <i class=“fa fa-cloud” aria-hidden=“true”></i> 标签云: “tags”
+  <i class=“fa fa-link” aria-hidden=“true”></i> 友情链接:
+    - <i class=“fa fa-info-circle” aria-hidden=“true”></i> 下格音音乐会海报: “http://new.nnovcons.ru/afisha/“
+    - <i class=“fa fa-vk” aria-hidden=“true”></i> VK博士群通知: “vk-group”
+    - <i class=“fa fa-music” aria-hidden=“true”></i> 青年作曲家（方可）: “https://fangkebxt.wordpress.com/“
+    - <i class=“fa fa-pencil-square-o” aria-hidden=“true”></i> 大汉俄БКРС官网: “https://bkrs.info/“
+  <i class=“fa fa-language” aria-hidden=“true”></i> 汉语:
+    - <i class=“fa fa-language” aria-hidden=“true”></i> English: “https://fanyu.ru/en/“
+    - <i class=“fa fa-language” aria-hidden=“true”></i> Русский: “https://fanyu.ru/ru/“
 
 # Image to show in the navigation bar - image must be a square (width = height)
-# Remove this parameter if you don't want an image in the navbar
-avatar: "/img/avatar-icon.png"
+# Remove this parameter if you don’t want an image in the navbar
+avatar: “/img/avatar-icon.png”
 
 # If you want to have an image logo in the top-left corner instead of the title text,
 # then specify the following parameter
-title-img: "/img/favicon.ico"
+title-img: “/img/favicon.ico”
 
-# --- Footer options --- #
+# — Footer options — #
 
-# Change all these values or delete the ones you don't want.
-# Important: you must keep the "name" parameter, everything else you can remove
+# Change all these values or delete the ones you don’t want.
+# Important: you must keep the “name” parameter, everything else you can remove
 author:
   name: 樊宇
-  email: "fanyu-1@outlook.com"
+  email: “fanyu-1@outlook.com”
   weibo: battlecafe # eg. daattali
   vk: fanyu # eg. daattali
   facebook: battlecafe  # eg. daattali
@@ -60,7 +60,7 @@ author:
   google-plus: 117492748807525666211   # eg. +DeanAttali or 109424658772469020925
   linkedin: battlecafe  # eg. daattali
   xing: yourname      # eg. daattali
-  stackoverflow: yourlink  # eg. "3943160/daattali"
+  stackoverflow: yourlink  # eg. “3943160/daattali”
   snapchat: yourname  # eg. daattali
   instagram: yourname # eg. daattali
   youtube: channel/UCmirBNNOryDbqmLnnzOGlEg   # eg. user/daattali or channel/daattali
@@ -99,21 +99,21 @@ share-links-active:
   linkedin: true
 
 # How to display the link to the website in the footer
-# Remove this if you don't want a link in the footer
-url-pretty: "fanyu.ru"  # eg. "deanattali.com/beautiful-jekyll"
+# Remove this if you don’t want a link in the footer
+url-pretty: “fanyu.ru”  # eg. “deanattali.com/beautiful-jekyll”
 
-# --- Misc --- #
+# — Misc — #
 # Fill in your Duoshuo shortname (NOT the userid) if you want to support Duoshuo comments
-duoshuo: "battlecafe"
+duoshuo: “battlecafe”
 
 # Fill in your Google Analytics ID to track your website using GA
-# google_analytics: ""
+# google_analytics: “”
 
 # Google Tag Manager ID
-# gtm: ""
+# gtm: “”
 
 # Facebook App ID
-# fb_app_id: ""
+# fb_app_id: “”
 
 # Excerpt Word Length
 # Truncates the excerpt to the specified number of words on the index page
@@ -121,12 +121,12 @@ excerpt_length: 50
 
 # Character used to separate site title and description in HTML document title
 # and RSS feed title
-title-separator: "|"
+title-separator: “|”
 
-# --- Don't need to touch anything below here (but you can if you want) --- #
+# — Don’t need to touch anything below here (but you can if you want) — #
 
-# Output options (more information on Jekyll's site)
-timezone: "Europe/Moscow"
+# Output options (more information on Jekyll’s site)
+timezone: “Europe/Moscow”
 markdown: kramdown
 highlighter: rouge
 permalink: /:year-:month-:day-:title/
@@ -135,21 +135,21 @@ paginate: 5
 kramdown:
   input: GFM
 
-# Default YAML values (more information on Jekyll's site)
+# Default YAML values (more information on Jekyll’s site)
 defaults:
   -
     scope:
-      path: ""
-      type: "posts"
+      path: “”
+      type: “posts”
     values:
-      layout: "post"
+      layout: “post”
       comments: true  # add comments to all blog posts
       social-share: true # add social media sharing buttons to all blog posts
   -
     scope:
-      path: "" # all files
+      path: “” # all files
     values:
-      layout: "page"
+      layout: “page”
       show-avatar: true
 
 # Exclude these files from production site
@@ -163,8 +163,8 @@ exclude:
 
 # prose.io config
 prose:
-  rooturl: '_posts'
-  media: 'img'
+  rooturl: ‘_posts’
+  media: ‘img’
   ignore:
     - 404.html
     - LICENSE
@@ -177,41 +177,41 @@ prose:
     - /js
   metadata:
     _posts:
-      - name: "layout"
+      - name: “layout”
         field:
-          element: "hidden"
-          value: "post"
-      - name: "title"
+          element: “hidden”
+          value: “post”
+      - name: “title”
         field:
-          element: "text"
-          label: "Post title"
-          placeholder: "Title"
+          element: “text”
+          label: “Post title”
+          placeholder: “Title”
           alterable: true
-      - name: "subtitle"
+      - name: “subtitle”
         field:
-          element: "textarea"
-          label: "Subtitle"
-          placeholder: "A description of your post."
+          element: “textarea”
+          label: “Subtitle”
+          placeholder: “A description of your post.”
           alterable: true
-      - name: "date"
+      - name: “date”
         field:
-          element: "text"
-          label: "Date"
-          help: "Enter date of post."
-          placeholder: "yyyy-mm-dd"
+          element: “text”
+          label: “Date”
+          help: “Enter date of post.”
+          placeholder: “yyyy-mm-dd”
           alterable: true
-      - name: "image"
+      - name: “image”
         field:
-          element: "text"
-          label: "Image"
-          help: "Add a thumbnail image to your post."
-          placeholder: "Thumbnail"
+          element: “text”
+          label: “Image”
+          help: “Add a thumbnail image to your post.”
+          placeholder: “Thumbnail”
           alterable: true
-      - name: "published"
+      - name: “published”
         field:
-          element: "checkbox"
-          label: "Publish"
-          help: "Check to publish post, uncheck to hide."
+          element: “checkbox”
+          label: “Publish”
+          help: “Check to publish post, uncheck to hide.”
 
 gems:
   - jekyll-paginate
